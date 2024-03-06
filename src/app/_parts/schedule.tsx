@@ -9,10 +9,10 @@ const Schedule = () => {
         "Registration for the event will start from 10th March, 2024.",
     },
     {
-      date: "February, 2024",
+      date: "27 March, 2024",
       title: "Registration Ends",
       additional_details:
-        "No more registrations will be accepted after , 2024 11:59 PM.",
+        "No more registrations will be accepted after 27 March , 2024 11:59 PM.",
     },
     {
       date: "29 March,2024",
