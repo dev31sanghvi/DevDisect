@@ -26,7 +26,7 @@ const AboutEvent = () => {
             opportunity! Our hackathon is a dynamic platform designed to inspire
             and empower aspiring web developers to showcase their skills,
             creativity, and passion for building the web of tomorrow. Whether
-            you're a seasoned coder or just starting your journey in web
+            youre a seasoned coder or just starting your journey in web
             development, this event is for you!
           </p>
           <p className="text-lg leading-relaxed mt-4">
