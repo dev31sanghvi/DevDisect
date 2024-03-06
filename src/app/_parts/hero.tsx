@@ -4,26 +4,34 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="bg-blue-900 text-white p-8 lg:p-24 flex flex-col items-center text-center">
-      <Image
-        src={"/mu_logo.png"}
-        alt="Marwadi University"
-        width={350}
-        height={100}
-        className="mb-8"
-      />
-      <p className="font-mono text-sm">
-        Department of Computer Engineering Organizes
-      </p>
-      <h1 className="font-bold text-4xl ">Hack Fest - 2024</h1>
-      <p className="font-medium text-xl mt-8">
-        Tech For Tomorrow&apos;s Sustainability
-      </p>
+    <div className="relative bg-black text-white p-8 lg:p-24 flex flex-col items-center text-center overflow-hidden">
+      {/* Video background */}
+      <div className="absolute top-0 left-0 w-full h-full">
+        <video
+          src="/path/to/video.mp4" // Replace with your video path
+          autoPlay
+          loop
+          muted
+          className="w-full h-full object-cover opacity-50"
+        ></video>
+      </div>
 
-      <div className="mt-8">
-        <Link href="https://forms.gle/Vfq8aSZ9wQFCxZcv9" target="_blank">
-          <Button>Register Now</Button>
-        </Link>
+      {/* Content */}
+      <div className="relative z-10">
+        <p className="font-mono text-sm">DEVDISECT PRESENTS</p>
+        <h1 className="font-bold text-4xl lg:text-6xl mb-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-transparent bg-clip-text">
+          WEBHACK 1.0
+        </h1>
+        <p className="font-medium text-xl lg:text-2xl mb-8">
+          where innovation meets opportunity!
+        </p>
+        <div className="mt-8">
+          <Link href="GOOGLE FORM LINK" target="_blank">
+            <Button className="transition duration-300 ease-in-out bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full shadow-md transform hover:scale-105">
+              Register Now
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   );

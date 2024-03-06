@@ -1,84 +1,101 @@
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+import React from "react";
 
-const schedule = [
-  {
-    date: "08 February, 2024",
-    title: "Registration Starts",
-    additional_details:
-      "Registration for the event will start from 08 February, 2024.",
-  },
-  {
-    date: "15 February, 2024",
-    title: "Registration Ends",
-    additional_details:
-      "No more registrations will be accepted after 15 February, 2024 11:59 PM.",
-  },
-  {
-    date: "16 February, 2024",
-    title: "PPT Submission Starts",
-    additional_details: "Submission of PPT will start from 16 February, 2024.",
-  },
-  {
-    date: "19 February, 2024",
-    title: "PPT Submission Ends",
-    additional_details:
-      "PPT submission will end on 19 February, 2024 11:59 PM.",
-  },
-  {
-    date: "26 February, 2024",
-    title: "Shortlist Publised",
-    additional_details: "All shortlisted teams will be notified via email.",
-  },
-  {
-    date: "05 March, 2024",
-    title: "Expert talk on Git & GitHub",
-    additional_details:
-      "Expert talk and hands-on session on how to use Git & GitHub.",
-  },
-  // {
-  //   date: "01 March, 2024",
-  //   title: "Expert talk on Hackathon Participation",
-  //   additional_details:
-  //     "Expert talk on how to participate in a hackathon and what to expect",
-  // },
-  {
-    date: "06 March, 2024",
-    title: "Hack Fest - 2024",
-    additional_details:
-      "The event will be held on 06 March, 2024 at Marwadi University.",
-  },
-];
-export default function Schedule() {
+const Schedule = () => {
+  const schedule = [
+    {
+      date: "10 March , 2024",
+      title: "Registration Starts",
+      additional_details:
+        "Registration for the event will start from 10th March, 2024.",
+    },
+    {
+      date: "February, 2024",
+      title: "Registration Ends",
+      additional_details:
+        "No more registrations will be accepted after , 2024 11:59 PM.",
+    },
+    {
+      date: "29 March,2024",
+      title: "Hackathon Starts",
+      additional_details: ".",
+    },
+    {
+      date: "29 March ,11:00 AM",
+      title: "Kick off Session",
+      additional_details:
+        ".",
+    },
+    {
+      date: "29 March ,5:00 PM ",
+      title: "Expert Talk 1",
+      additional_details:
+        "",
+    },
+    {
+      date: "30 March ,5:00 PM ",
+      title: "Expert Talk 2",
+      additional_details:
+        "",
+    },
+    {
+      date: "31 March ,5:00 PM ",
+      title: "Expert Talk 3",
+      additional_details:
+        "detail",
+    },
+    {
+      date: "31 March ,7:00 PM ",
+      title: "Closing Ceremony",
+      additional_details:
+        "detail",
+    },
+    {
+      date: "7 April ,2024 ",
+      title: "Result Announcement",
+      additional_details:
+        "detail",
+    },
+  ];
+
   return (
-    <div className="p-4 lg:p-24">
-      <h2 className="font-bold text-3xl mb-2" id="schedule">
-        Schedule
-      </h2>
-      <Table>
-        <TableHeader>
-          <TableRow>
-            <TableHead className="">Date</TableHead>
-            <TableHead>Event</TableHead>
-            <TableHead>Details</TableHead>
-          </TableRow>
-        </TableHeader>
-        <TableBody>
-          {schedule.map((item, i) => (
-            <TableRow key={i}>
-              <TableCell className="font-medium">{item.date}</TableCell>
-              <TableCell>{item.title}</TableCell>
-              <TableCell>{item.additional_details}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
+    <div className="bg-black text-white p-8 lg:p-24 rounded-lg shadow-xl">
+      <h2 className="font-bold text-3xl mb-8">Schedule</h2>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {schedule.map((item, i) => (
+          <div key={i} className="relative">
+            <div
+              className={`p-6 bg-gray-800 rounded-lg shadow-md hover:bg-gray-700 transition duration-300 ease-in-out ${
+                i === schedule.length - 1 ? "pb-10" : ""
+              }`}
+            >
+              <div className="text-xl font-semibold mb-2">{item.date}</div>
+              <div className="text-gray-400">{item.title}</div>
+              <div className="mt-2">{item.additional_details}</div>
+            </div>
+            {i !== schedule.length - 1 && (
+              <div className="absolute top-1/2 left-full transform -translate-y-1/2 -translate-x-4">
+                <svg
+                  className="h-6 w-6 text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
-}
+};
+
+export default Schedule;
+

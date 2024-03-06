@@ -12,7 +12,7 @@ export default function Registration() {
         11:59 PM.
       </p>
       <div className="mt-4">
-        <Link href="https://forms.gle/Vfq8aSZ9wQFCxZcv9" target="_blank">
+        <Link href="google form link" target="_blank">
           <Button>Register Now</Button>
         </Link>
       </div>
