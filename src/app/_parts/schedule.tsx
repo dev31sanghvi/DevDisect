@@ -17,19 +17,19 @@ const Schedule = () => {
     {
       date: "29 March,2024",
       title: "Hackathon Starts",
-      additional_details: ".",
+      additional_details: "Show up your creativiy and buikd your teams.",
     },
     {
       date: "29 March ,11:00 AM",
       title: "Kick off Session",
       additional_details:
-        ".",
+        "",
     },
     {
       date: "29 March ,5:00 PM ",
       title: "Expert Talk 1",
       additional_details:
-        "",
+        "A surprise talk on a spotlight topic for everyone",
     },
     {
       date: "30 March ,5:00 PM ",
@@ -47,18 +47,18 @@ const Schedule = () => {
       date: "31 March ,7:00 PM ",
       title: "Closing Ceremony",
       additional_details:
-        "detail",
+        "",
     },
     {
       date: "7 April ,2024 ",
       title: "Result Announcement",
       additional_details:
-        "detail",
+        "Winners be ready to get awesome prizes for your creative ideas.",
     },
   ];
 
   return (
-    <div className="bg-black text-white p-8 lg:p-24 rounded-lg shadow-xl">
+    <div className="bg-black text-white p-8 lg:p-24 rounded-lg shadow-xl" id="schedule">
       <h2 className="font-bold text-3xl mb-8">Schedule</h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {schedule.map((item, i) => (
