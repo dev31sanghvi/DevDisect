@@ -8,15 +8,16 @@ import Registration from "./_parts/registration";
 import Coordinators from "./_parts/coordinators";
 import CodeOfConduct from "./_parts/codeofconduct";
 import AboutEvent from "./_parts/AboutEvent";
-// import Navbar from "./_parts/Navbar";
+import Navbar from "./_parts/Navbar";
 export default function Home() {
   return (
     <main className="bg-black">
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
       {/* <HackathonDates /> */}
-      <AboutEvent />
+      
       <Schedule />
+      <AboutEvent />
       <Separator />
       {/* <Prizes /> */}
       <Separator />

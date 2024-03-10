@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutEvent = () => {
   return (
-    <div className="bg-black text-white py-16 lg:py-24">
+    <div className="bg-black text-white py-16 lg:py-24" id="about">
       <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center">
         {/* Left side - Picture */}
         <div className="lg:w-1/2 mb-8 lg:mb-0">
