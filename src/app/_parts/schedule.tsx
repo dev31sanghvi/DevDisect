@@ -41,7 +41,7 @@ const Schedule = () => {
       date: "31 March ,5:00 PM ",
       title: "Expert Talk 3",
       additional_details:
-        "detail",
+        "",
     },
     {
       date: "31 March ,7:00 PM ",
@@ -59,7 +59,9 @@ const Schedule = () => {
 
   return (
     <div className="bg-black text-white p-8 lg:p-24 rounded-lg shadow-xl" id="schedule">
-      <h2 className="font-bold text-3xl mb-8">Schedule</h2>
+     <h2 className="text-3xl text-lg:text-4xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">
+          Schedule
+          </h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {schedule.map((item, i) => (
           <div key={i} className="relative">
