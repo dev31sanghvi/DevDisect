@@ -32,6 +32,13 @@ export default function Hero() {
             </Button>
           </Link>
         </div>
+        <div className="mt-8">
+          <Link href="https://drive.google.com/drive/folders/1CZlGDS0Ihx86b48F5yiliZ1Vw24Pcia0?usp=sharing" target="_blank">
+            <Button className="transition duration-300 ease-in-out bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full shadow-md transform hover:scale-105">
+              Brochure
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   );
