@@ -9,13 +9,14 @@ import Coordinators from "./_parts/coordinators";
 import CodeOfConduct from "./_parts/codeofconduct";
 import AboutEvent from "./_parts/AboutEvent";
 import Navbar from "./_parts/Navbar";
+// import Organizers from "./_parts/Organizers";
 export default function Home() {
   return (
     <main className="bg-black">
       <Navbar />
       <Hero />
       {/* <HackathonDates /> */}
-      
+
       <Schedule />
       <AboutEvent />
       <Separator />
@@ -30,6 +31,7 @@ export default function Home() {
       <CodeOfConduct />
       <Separator />
       <Registration />
+
     </main>
   );
 }

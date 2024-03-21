@@ -33,7 +33,7 @@ export default function Hero() {
           </Link>
         </div>
         <div className="mt-8">
-          <Link href="https://drive.google.com/file/d/1Eez4_pfO1zWgUrcDyrc4UdRCxU1tHVbC/view?usp=sharing" target="_blank">
+          <Link href="https://drive.google.com/file/d/1m_oU6p4MmcF8sq4PPM6J5xD0YoR_3JkS/view?usp=sharing" target="_blank">
             <Button className="transition duration-300 ease-in-out bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full shadow-md transform hover:scale-105">
               Brochure
             </Button>
