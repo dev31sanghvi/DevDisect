@@ -26,7 +26,7 @@ export default function Hero() {
           where innovation meets opportunity!
         </p>
         <div className="mt-8">
-          <Link href="https://forms.gle/2hcusYkCTXzh5Aid8" target="_blank">
+          <Link href="https://webhack.devfolio.co" target="_blank">
             <Button className="transition duration-300 ease-in-out bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full shadow-md transform hover:scale-105">
               Register Now
             </Button>
