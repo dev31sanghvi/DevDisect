@@ -17,37 +17,32 @@ const Schedule = () => {
     {
       date: "29 March,2024",
       title: "Hackathon Starts",
-      additional_details: "Show up your creativiy and buikd your teams.",
+      additional_details: "Show up your creativiy and build your teams.",
     },
     {
       date: "29 March ,11:00 AM",
-      title: "Kick off Session",
-      additional_details:
-        "",
+      title: "",
+      additional_details: "Kick off Session",
     },
     {
       date: "29 March ,5:00 PM ",
       title: "Expert Talk 1",
-      additional_details:
-        "A surprise talk on a spotlight topic for everyone",
+      additional_details: "A surprise talk on a spotlight topic for everyone",
     },
     {
       date: "30 March ,5:00 PM ",
-      title: "Expert Talk 2",
-      additional_details:
-        "",
+      title: "",
+      additional_details: "Expert Talk 2",
     },
     {
       date: "31 March ,5:00 PM ",
-      title: "Expert Talk 3",
-      additional_details:
-        "",
+      title: "",
+      additional_details: "Expert Talk 3",
     },
     {
       date: "31 March ,7:00 PM ",
       title: "Closing Ceremony",
-      additional_details:
-        "",
+      additional_details: "",
     },
     {
       date: "7 April ,2024 ",
@@ -58,10 +53,13 @@ const Schedule = () => {
   ];
 
   return (
-    <div className="bg-black text-white p-8 lg:p-24 rounded-lg shadow-xl" id="schedule">
-     <h2 className="text-3xl text-lg:text-4xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">
-          Schedule
-          </h2>
+    <div
+      className="bg-black text-white p-8 lg:p-24 rounded-lg shadow-xl"
+      id="schedule"
+    >
+      <h2 className="text-3xl text-lg:text-4xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">
+        Schedule
+      </h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {schedule.map((item, i) => (
           <div key={i} className="relative">
@@ -100,4 +98,3 @@ const Schedule = () => {
 };
 
 export default Schedule;
-
